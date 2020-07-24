@@ -17,6 +17,22 @@ public class ShapeCalculatorTest {
         // assert
         Assert.assertEquals(expected, area, 10e-9);
     }
+
+    @Test
+    public void computeAreaTest_2(){
+        // arrange
+        double expected = 20;
+        Rectangle rectangle = new Rectangle();
+        rectangle.setHeight(5);
+        rectangle.setWidth(4);
+        ShapeCalculator shapeCalculatorUnderTest = new ShapeCalculator();
+
+        //act
+        double area = shapeCalculatorUnderTest.computeArea(rectangle);
+
+        // assert
+        Assert.assertEquals(expected, area, 10e-9);
+    }
 }
 
 
